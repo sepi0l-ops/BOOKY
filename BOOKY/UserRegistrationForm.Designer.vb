@@ -36,57 +36,65 @@ Partial Class UserRegistrationForm
         Me.LastNameTextBox = New System.Windows.Forms.TextBox()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
         Me.ContactTextBox = New System.Windows.Forms.TextBox()
+        Me.PasswordLabel = New System.Windows.Forms.Label()
+        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'FirstNameTextBox
         '
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(198, 37)
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(264, 46)
+        Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.FirstNameTextBox.Multiline = True
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(231, 23)
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(307, 27)
         Me.FirstNameTextBox.TabIndex = 0
         '
         'FirstNameLabel
         '
         Me.FirstNameLabel.AutoSize = True
-        Me.FirstNameLabel.Location = New System.Drawing.Point(70, 40)
+        Me.FirstNameLabel.Location = New System.Drawing.Point(93, 49)
+        Me.FirstNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.FirstNameLabel.Name = "FirstNameLabel"
-        Me.FirstNameLabel.Size = New System.Drawing.Size(60, 13)
+        Me.FirstNameLabel.Size = New System.Drawing.Size(75, 16)
         Me.FirstNameLabel.TabIndex = 3
         Me.FirstNameLabel.Text = "First Name:"
         '
         'LastNameLabel
         '
         Me.LastNameLabel.AutoSize = True
-        Me.LastNameLabel.Location = New System.Drawing.Point(70, 103)
+        Me.LastNameLabel.Location = New System.Drawing.Point(93, 110)
+        Me.LastNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LastNameLabel.Name = "LastNameLabel"
-        Me.LastNameLabel.Size = New System.Drawing.Size(61, 13)
+        Me.LastNameLabel.Size = New System.Drawing.Size(75, 16)
         Me.LastNameLabel.TabIndex = 4
         Me.LastNameLabel.Text = "Last Name:"
         '
         'EmailLabel
         '
         Me.EmailLabel.AutoSize = True
-        Me.EmailLabel.Location = New System.Drawing.Point(70, 169)
+        Me.EmailLabel.Location = New System.Drawing.Point(93, 178)
+        Me.EmailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.EmailLabel.Name = "EmailLabel"
-        Me.EmailLabel.Size = New System.Drawing.Size(35, 13)
+        Me.EmailLabel.Size = New System.Drawing.Size(44, 16)
         Me.EmailLabel.TabIndex = 5
         Me.EmailLabel.Text = "Email:"
         '
         'ContactLabel
         '
         Me.ContactLabel.AutoSize = True
-        Me.ContactLabel.Location = New System.Drawing.Point(70, 235)
+        Me.ContactLabel.Location = New System.Drawing.Point(93, 289)
+        Me.ContactLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ContactLabel.Name = "ContactLabel"
-        Me.ContactLabel.Size = New System.Drawing.Size(47, 13)
+        Me.ContactLabel.Size = New System.Drawing.Size(55, 16)
         Me.ContactLabel.TabIndex = 6
         Me.ContactLabel.Text = "Contact:"
         '
         'RegisterButton
         '
-        Me.RegisterButton.Location = New System.Drawing.Point(198, 297)
+        Me.RegisterButton.Location = New System.Drawing.Point(264, 366)
+        Me.RegisterButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RegisterButton.Name = "RegisterButton"
-        Me.RegisterButton.Size = New System.Drawing.Size(95, 32)
+        Me.RegisterButton.Size = New System.Drawing.Size(127, 39)
         Me.RegisterButton.TabIndex = 8
         Me.RegisterButton.Text = "Sign &Up"
         Me.ToolTip1.SetToolTip(Me.RegisterButton, "Your credentials will be updated on clicking")
@@ -94,9 +102,10 @@ Partial Class UserRegistrationForm
         '
         'BackButton
         '
-        Me.BackButton.Location = New System.Drawing.Point(334, 297)
+        Me.BackButton.Location = New System.Drawing.Point(445, 366)
+        Me.BackButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(95, 32)
+        Me.BackButton.Size = New System.Drawing.Size(127, 39)
         Me.BackButton.TabIndex = 9
         Me.BackButton.Text = "B&ack"
         Me.ToolTip2.SetToolTip(Me.BackButton, "Thank you for registering you will be directed to the welcome form")
@@ -104,33 +113,54 @@ Partial Class UserRegistrationForm
         '
         'LastNameTextBox
         '
-        Me.LastNameTextBox.Location = New System.Drawing.Point(198, 100)
+        Me.LastNameTextBox.Location = New System.Drawing.Point(264, 110)
+        Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LastNameTextBox.Multiline = True
         Me.LastNameTextBox.Name = "LastNameTextBox"
-        Me.LastNameTextBox.Size = New System.Drawing.Size(231, 23)
+        Me.LastNameTextBox.Size = New System.Drawing.Size(307, 27)
         Me.LastNameTextBox.TabIndex = 10
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(198, 166)
+        Me.EmailTextBox.Location = New System.Drawing.Point(264, 178)
+        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.EmailTextBox.Multiline = True
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(231, 23)
+        Me.EmailTextBox.Size = New System.Drawing.Size(307, 27)
         Me.EmailTextBox.TabIndex = 11
         '
         'ContactTextBox
         '
-        Me.ContactTextBox.Location = New System.Drawing.Point(198, 232)
+        Me.ContactTextBox.Location = New System.Drawing.Point(264, 286)
+        Me.ContactTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ContactTextBox.Multiline = True
         Me.ContactTextBox.Name = "ContactTextBox"
-        Me.ContactTextBox.Size = New System.Drawing.Size(231, 23)
+        Me.ContactTextBox.Size = New System.Drawing.Size(307, 27)
         Me.ContactTextBox.TabIndex = 12
+        '
+        'PasswordLabel
+        '
+        Me.PasswordLabel.AutoSize = True
+        Me.PasswordLabel.Location = New System.Drawing.Point(93, 239)
+        Me.PasswordLabel.Name = "PasswordLabel"
+        Me.PasswordLabel.Size = New System.Drawing.Size(67, 16)
+        Me.PasswordLabel.TabIndex = 13
+        Me.PasswordLabel.Text = "Password"
+        '
+        'PasswordTextBox
+        '
+        Me.PasswordTextBox.Location = New System.Drawing.Point(264, 239)
+        Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.Size = New System.Drawing.Size(307, 22)
+        Me.PasswordTextBox.TabIndex = 14
         '
         'UserRegistrationForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(615, 364)
+        Me.ClientSize = New System.Drawing.Size(820, 448)
+        Me.Controls.Add(Me.PasswordTextBox)
+        Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.ContactTextBox)
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.LastNameTextBox)
@@ -142,6 +172,7 @@ Partial Class UserRegistrationForm
         Me.Controls.Add(Me.FirstNameLabel)
         Me.Controls.Add(Me.FirstNameTextBox)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "UserRegistrationForm"
         Me.Text = "User Registration"
         Me.ResumeLayout(False)
@@ -161,4 +192,6 @@ Partial Class UserRegistrationForm
     Friend WithEvents LastNameTextBox As TextBox
     Friend WithEvents EmailTextBox As TextBox
     Friend WithEvents ContactTextBox As TextBox
+    Friend WithEvents PasswordLabel As Label
+    Friend WithEvents PasswordTextBox As TextBox
 End Class

@@ -4,7 +4,7 @@ Public Class BusinessRegistrationForm
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
         Dim conn As New Connection()
-        conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\CT2.2\Application Programming\booky\BOOKY\BOOKY.accdb"
+        conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Sam Sepiol\Desktop\Visual Basic\Project\BOOKY.accdb"
         conn.Open()
         Dim cmd As New Command With {
             .ActiveConnection = conn,

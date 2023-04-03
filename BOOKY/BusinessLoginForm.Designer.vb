@@ -17,7 +17,7 @@ Partial Class BusinessLoginForm
     Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
-    Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents EmailAddressTextBox As System.Windows.Forms.TextBox
     Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
     Friend WithEvents OK As System.Windows.Forms.Button
     Friend WithEvents Cancel As System.Windows.Forms.Button
@@ -34,7 +34,7 @@ Partial Class BusinessLoginForm
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
-        Me.UsernameTextBox = New System.Windows.Forms.TextBox()
+        Me.EmailAddressTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
@@ -47,7 +47,7 @@ Partial Class BusinessLoginForm
         '
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(16, 43)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LogoPictureBox.Name = "LogoPictureBox"
         Me.LogoPictureBox.Size = New System.Drawing.Size(189, 169)
         Me.LogoPictureBox.TabIndex = 0
@@ -73,18 +73,18 @@ Partial Class BusinessLoginForm
         Me.PasswordLabel.Text = "&Password"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'UsernameTextBox
+        'EmailAddressTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(232, 54)
-        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(292, 22)
-        Me.UsernameTextBox.TabIndex = 1
+        Me.EmailAddressTextBox.Location = New System.Drawing.Point(232, 54)
+        Me.EmailAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.EmailAddressTextBox.Name = "EmailAddressTextBox"
+        Me.EmailAddressTextBox.Size = New System.Drawing.Size(292, 22)
+        Me.EmailAddressTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
         Me.PasswordTextBox.Location = New System.Drawing.Point(232, 124)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(292, 22)
@@ -93,7 +93,7 @@ Partial Class BusinessLoginForm
         'OK
         '
         Me.OK.Location = New System.Drawing.Point(233, 172)
-        Me.OK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OK.Margin = New System.Windows.Forms.Padding(4)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(124, 28)
         Me.OK.TabIndex = 4
@@ -103,7 +103,7 @@ Partial Class BusinessLoginForm
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Cancel.Location = New System.Drawing.Point(397, 172)
-        Me.Cancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Cancel.Margin = New System.Windows.Forms.Padding(4)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(125, 28)
         Me.Cancel.TabIndex = 5
@@ -142,13 +142,13 @@ Partial Class BusinessLoginForm
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
-        Me.Controls.Add(Me.UsernameTextBox)
+        Me.Controls.Add(Me.EmailAddressTextBox)
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "BusinessLoginForm"
